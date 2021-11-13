@@ -1,0 +1,63 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<title>Группа ЦПИ-11</title>
+</head>
+<body>
+<style>
+	body {
+		background: url(D:/Загрузки/oboi.jpg);
+	}
+</style>
+	<tbody>
+		<div id="table0_2">
+			<div id="table0">
+				<table cellspacing="1" cellpadding="4">
+					<tr>
+					 <th colspan="6">
+						<input type="button" id="dob_p" class="dobavit_p" value="Добавить пользователя">
+					 </th>	
+					</tr>
+					<tr>
+					 <th>Ф.И.О.</th>
+					 <th>Курс</th>
+					 <th>Дата рождения</th>
+					 <th>Форма обучения</th>
+					 <th>Действие</th>
+					</tr>
+					<tbody id="tbl">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</tbody>
+	<div id="table1_2">
+	<form id="table1"  autocomplete="off">
+			<input type="button" id="close_2" class="close" data-id="table1_2" value="✖">
+			<input type="hidden" id="Id" value="-1">
+			<p><b>Ф.И.О. студента </b></p>
+			<input type="text" id="fio" size="50" placeholder="Ф.И.О.">
+			<p><b>Курс обучения </b></p>
+			<input type="text" id="kyrs" size="50" placeholder="Курс">
+			<p size="50">
+		    <label for="date"><b>Дата рождения:</b> </label>
+			</p>
+			<p>
+		    <input type="date" id="date" id="date"/>
+		    </p>
+			<p><b>Форма обучения </b></p>
+			<input type="text" id	="forma" size="50" placeholder="Форма обучения">
+			<input type="button" id="knopka_reg" data-func="submit" class="register" value="Сохранить">
+	</form> 
+	</div>
+	<div id="table2_2">
+	<div id="table2">
+			<input type="button" id="close_" class="close" data-id="table2_2" value="✖">
+			<p><b>Вы действительно хотите удалить студента?</b></p>
+			<input type="button" id="da" class="register" data-func="remove" value="Да">
+			<input type="button" id="net" class="close_net" data-id="table2_2" value="Нет">
+	</div>
+	</div>
+</body>
+<script src="Java.js"></script>
+</html>
